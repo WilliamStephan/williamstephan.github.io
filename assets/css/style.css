@@ -31,16 +31,11 @@ h1 {
     color: #b3b3b3;
 }
 
-.basicinfoontent {
-    font-size: 120%;
-}
-
 #photoNotes {
-padding-top: 5%;
-font-size: 150%;
-color: whitesmoke;
+    padding-top: 3%;
+    font-size: 100%;
+    color: whitesmoke;
 }
-
 
 .typer-content {
     font-size: 150%;
@@ -86,7 +81,8 @@ a:active {
 }
 
 .portraitContent {
-    animation: fadeIn 1.5s;
+    animation: fadeIn 3s;
+    background: black;
 }
 
 .portraitImage {
@@ -94,13 +90,9 @@ a:active {
     max-width: 100%;
     width: 100%;
     display:block; 
-    background-image: linear-gradient(to left,rgba(0,0,0, 0) 70%,rgba(0,0,0, 1) 100%), url(../images/bgImage1.jpg);
+    background-image: linear-gradient(to top,rgba(0,0,0, 0) 75%,rgba(0,0,0, 1) 100%), url(../images/bgImage1.jpg);
     background-size: cover;
     background-position: center center;
-}
-
-.headshotContent {
-    animation: fadeIn 1.5s;
 }
 
 #headShot {
@@ -146,7 +138,7 @@ a:active {
 
 @media (max-width: 768px) { 
     .portraitImage {
-        background-image: linear-gradient(to top,rgba(0,0,0, 0) 70%,rgba(0,0,0, 1) 100%), url(../images/bgImage1.jpg);
+        background-image: linear-gradient(to top,rgba(0,0,0, 0) 75%,rgba(0,0,0, 1) 100%), url(../images/bgImage1.jpg);
         height: 400px;
         width: 100%;
         background-size: cover;
@@ -154,7 +146,7 @@ a:active {
 
     #photoNotes {
         padding-top: 5%;
-        font-size: 150%;
+        font-size: 100%;
         color: #b3b3b3;
     }
 
