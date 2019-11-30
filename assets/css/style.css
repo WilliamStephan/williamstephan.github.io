@@ -1,0 +1,164 @@
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:url(../assets/images/bgImage1.jpg)
+}
+
+html, body, .main {
+    height: 100%;
+    background-color: black;
+}
+
+h1 {
+    font-size: 320%;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.mainContent {
+    padding-left: 7%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    float: left;
+    background: black;
+}
+
+.insideContent {
+    float: left;
+}
+
+.descriptionContent {
+    font-family: 'Kulim Park', sans-serif;
+    color: #b3b3b3;
+}
+
+.basicinfoontent {
+    font-size: 120%;
+}
+
+#photoNotes {
+padding-top: 5%;
+font-size: 150%;
+color: whitesmoke;
+}
+
+
+.typer-content {
+    font-size: 150%;
+    border-right: .1em solid #d41313;
+    animation: blink-cursor .5s step-end infinite;
+}
+
+@keyframes blink-cursor {
+    from, to { border-color: transparent }
+    50% { border-color: #d41313; }
+}
+
+.links {
+    color: rgb(244, 78, 79);
+}
+
+.linksText {
+    letter-spacing: 1px;
+    font-size: 95%;
+}
+
+a:link {
+    color: #d41313;
+    text-decoration: none; 
+}
+a:visited {
+    color: #d41313;
+    text-decoration: none;
+}
+a:hover {
+    color: #d41313;
+
+    text-decoration: none;
+}
+a:active {
+    color: #d41313;
+    text-decoration: none;
+}
+
+.adjGap {
+    width: 100%;
+    height: 10px;
+}
+
+.portraitContent {
+    animation: fadeIn 1.5s;
+}
+
+.portraitImage {
+    min-height: 100%; 
+    max-width: 100%;
+    width: 100%;
+    display:block; 
+    background-image: linear-gradient(to left,rgba(0,0,0, 0) 70%,rgba(0,0,0, 1) 100%), url(../images/bgImage1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.headshotContent {
+    animation: fadeIn 1.5s;
+}
+
+#headShot {
+    width: 100%;
+    animation: fadeIn 1s;
+}
+
+/* Fading animation */
+
+#fadeTitle {
+    animation: fadeIn 1s;
+}
+
+#fadeDescription {
+    animation: fadeIn 1.25s;
+}
+
+#fadeLink1 {
+    animation: fadeIn 1.5s;
+}
+
+#fadeLink2 {
+    animation: fadeIn 1.75s;
+}
+
+#fadeLink3 {
+    animation: fadeIn 2s;
+}
+
+#fadeLink4 {
+    animation: fadeIn 2.25s;
+}
+
+#fadeLink5 {
+    animation: fadeIn 2.5s;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) { 
+    .portraitImage {
+        background-image: linear-gradient(to top,rgba(0,0,0, 0) 70%,rgba(0,0,0, 1) 100%), url(../images/bgImage1.jpg);
+        height: 400px;
+        width: 100%;
+        background-size: cover;
+    }
+
+    #photoNotes {
+        padding-top: 5%;
+        font-size: 150%;
+        color: #b3b3b3;
+    }
+
+    .mainContent { 
+        text-align: center;
+    }
+}
